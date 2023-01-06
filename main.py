@@ -7,7 +7,7 @@ class Person:
     def __init__(self, name, age):
         self.name = name
         self.age = age
-        self.id = str(uuid.uuid4())
+        self.id = str(uuid.uuid4()) # guid value
 
 
 # Some kind of "data base" - just a Person objects
