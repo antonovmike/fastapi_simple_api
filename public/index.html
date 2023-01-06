@@ -20,7 +20,7 @@ button{margin: 5px;}
       Age:<br />
       <input id="userAge" type="number" />
     </p>
-     <p>
+    <p>
       <button id="saveBtn">Add</button>
       <button id="resetBtn">Reset</button>
     </p>
@@ -32,6 +32,7 @@ button{margin: 5px;}
   </table>
 
   <script>
+  // This is the main part
   // Get users list
     async function getUsers() {
       const response = await fetch("/api/users", {
@@ -162,7 +163,6 @@ button{margin: 5px;}
 
     // Send
     document.getElementById("saveBtn").addEventListener("click", async () => {
-       
       const id = document.getElementById("userId").value;
       const name = document.getElementById("userName").value;
       const age = document.getElementById("userAge").value;
