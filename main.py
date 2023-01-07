@@ -9,7 +9,7 @@ app = FastAPI()
 def root():
     return FileResponse("public/index.html")
  
- # Send form
+# Send form
 # @app.post("/postdata")
 # def postdata(username = Form(), userage=Form()):
     # return {"name": username, "age": userage}
@@ -23,9 +23,9 @@ def root():
 # @app.post("/postdata")
 # def postdata(username: str = Form(default ="Undefined", min_length=2, max_length=9), userage: int = Form(default=18, ge=18, lt=111)):
     # return {"name": username, "age": userage}
-    
+
+
 # Send list
 @app.post("/postdata")
-def postdata(username: str = Form(), 
-            languages: list =Form()):
+def postdata(username: str = Form(), languages: list = Form()):
     return {"name": username, "languages": languages}
