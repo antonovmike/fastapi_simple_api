@@ -3,6 +3,10 @@ FastAPI essencials: Creating simple API
 
 Simple Web API REST app
 
+Install python-multipart (0.0.5) mudule
+```bash
+pip install python-multipart
+```
 
 ![Simple API](https://github.com/antonovmike/fastapi_simple_api/blob/main/Screenshot.png)
 
